@@ -4,6 +4,7 @@ import time
 import tkinter as tk
 from tkinter import ttk
 
+program_type = None
 stop_flag = False
 running = False
 font_style = ("Arial Black", 10, "bold")
@@ -122,7 +123,6 @@ def console():
     ip = None
     request_type = None
     interval = None
-    program_type = None
     try:
         while not request_type or request_type.lower() != 'get' and request_type.lower() != 'head' and request_type.lower() != 'stop' and request_type.lower() != 'exit': request_type = input("Тип запроса: GET/HEAD\n> ")
     except KeyboardInterrupt:
