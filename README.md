@@ -2,6 +2,7 @@
 Программа-накрутчик переходов на сайт
 Для работы необходимо установить Tkinter:
 ###LINUX:
+
 **Debian-based(Ubuntu):**
 ```bash
 sudo apt install python3-tk
