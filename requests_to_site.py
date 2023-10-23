@@ -80,7 +80,8 @@ def mode_selection(stdscr):
         console()
     elif selected_option == "DDOS-MODE":
         curses.endwin()
-        ddos_mode()
+        i = input("Количество потоков\n> ")
+        ddos_mode(i)
     elif selected_option == "ВЫХОД":
         sys.exit(1)
 
@@ -90,7 +91,7 @@ running = False
 font_style = ("Arial Black", 10, "bold")
 program_type = None
 
-def send_while(ip: float, request_type, interval):
+def send_while(ip: str, request_type, interval: float):
     while True:
         try:
             if request_type.lower() == 'get':
