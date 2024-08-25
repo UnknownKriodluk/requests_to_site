@@ -15,6 +15,10 @@ sudo apt install python3-tk
 sudo pacman -S python3-tk
 ```
 ### Windows:
+```bash
+pip install windows-curses
+```
+
 Пакет tk устанавливается вместе с python в установщике в меню необязательных опций
 
 ## Запуск
